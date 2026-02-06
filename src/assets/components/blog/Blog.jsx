@@ -1,7 +1,7 @@
 import React from "react";
 import "./blog.css";
 import { BiSolidBookmarkStar } from "react-icons/bi";
-const Blog = ({ blog, handleBookMarked }) => {
+const Blog = ({ blog, handleBookMarked, handleMarkAsRead }) => {
   return (
     <div className="blog ">
       <img className="img" src={blog.cover_Photo} alt="cover" />
@@ -20,6 +20,7 @@ const Blog = ({ blog, handleBookMarked }) => {
         </div>
         <BiSolidBookmarkStar onClick={() => handleBookMarked(blog)} size={25} />
       </div>
+      <button>mark as read</button>
     </div>
   );
 };

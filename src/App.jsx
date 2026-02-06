@@ -11,7 +11,9 @@ function App() {
     setBookMark([...bookMark, blog]);
   };
 
-  console.log(bookMark);
+  const handleMarkAsRead = () => {
+    console.log("hello mark");
+  };
 
   return (
     <>
@@ -20,11 +22,24 @@ function App() {
 
         <div className="main-container flex justify-between text-center text-black font-medium gap-2 bg-gray-200 border-2 w-11/12 mx-auto">
           <div className="left-side w-70% mx-auto ">
-            <Blogs handleBookMarked={handleBookMarked}></Blogs>
+            <Blogs
+              handleBookMarked={handleBookMarked}
+              handleMarkAsRead={handleMarkAsRead}
+            ></Blogs>
           </div>
           <div className="right-side w-96 bg-gray-400  ">
             <h2 className="text-2xl font-medium p-2">reading time: 0</h2>
-            <h2 className="text-2xl font-medium p-2">bookmarked count:0</h2>
+            <h2 className="text-2xl font-medium p-2">
+              bookmarked count:
+              {bookMark.length}
+            </h2>
+            <div className="border-2 border-yellow-800 p-2 rounded-xl">
+              {bookMark.map((mark) => (
+                <p className="border-2 m-1 border-blue-700 rounded-2xl">
+                  {mark.title}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </Suspense>
