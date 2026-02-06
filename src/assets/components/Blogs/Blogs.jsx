@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-
+import Blog from "../blog/blog";
+import "./blogs.css";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
@@ -14,6 +15,11 @@ const Blogs = () => {
   return (
     <div>
       <h3>All blogs is here: {blogs.length}</h3>
+      <div className="card">
+        {blogs.map((blog) => (
+          <Blog blog={blog}></Blog>
+        ))}
+      </div>
     </div>
   );
 };
