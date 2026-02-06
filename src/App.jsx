@@ -1,11 +1,20 @@
+import { Suspense } from "react";
 import "./App.css";
 import Blogs from "./assets/components/Blogs/blogs";
 import Navbar from "./assets/components/NavBar/Navbar";
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <Blogs></Blogs>
+      <Suspense fallback={<h3>loading page...</h3>}>
+        <Navbar></Navbar>
+
+        <div className="main-container flex justify-between text-center text-black font-medium gap-2 bg-gray-200 border-2 w-11/12 mx-auto">
+          <div className="left-side w-70% mx-auto">
+            <Blogs></Blogs>
+          </div>
+          <div className="right-side w-96 bg-gray-400  ">Right side</div>
+        </div>
+      </Suspense>
     </>
   );
 }

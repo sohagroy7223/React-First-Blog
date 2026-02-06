@@ -3,7 +3,7 @@ import "./blog.css";
 const Blog = ({ blog }) => {
   return (
     <div className="blog">
-      <h3>name: {blog.title} </h3>
+      <h3>Title: {blog.title} </h3>
       <img className="img" src={blog.cover_Photo} alt="" />
     </div>
   );

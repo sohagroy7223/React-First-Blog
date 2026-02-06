@@ -14,8 +14,8 @@ const Blogs = () => {
 
   return (
     <div>
-      <h3>All blogs is here: {blogs.length}</h3>
-      <div className="card">
+      <h2 className="font-bold text-2xl">All blogs item: {blogs.length}</h2>
+      <div>
         {blogs.map((blog) => (
           <Blog blog={blog}></Blog>
         ))}
