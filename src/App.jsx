@@ -5,14 +5,16 @@ import Navbar from "./assets/components/NavBar/Navbar";
 
 function App() {
   const [bookMark, setBookMark] = useState([]);
+  const [readTime, setReadTime] = useState(0);
 
   const handleBookMarked = (blog) => {
     // console.log(blog);
     setBookMark([...bookMark, blog]);
   };
 
-  const handleMarkAsRead = () => {
-    console.log("hello mark");
+  const handleMarkAsRead = (time) => {
+    const newReadTime = readTime + time;
+    setReadTime(newReadTime);
   };
 
   return (
@@ -28,7 +30,9 @@ function App() {
             ></Blogs>
           </div>
           <div className="right-side w-96 bg-gray-400  ">
-            <h2 className="text-2xl font-medium p-2">reading time: 0</h2>
+            <h2 className="text-2xl font-medium p-2">
+              reading time:{readTime}
+            </h2>
             <h2 className="text-2xl font-medium p-2">
               bookmarked count:
               {bookMark.length}

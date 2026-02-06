@@ -20,7 +20,9 @@ const Blog = ({ blog, handleBookMarked, handleMarkAsRead }) => {
         </div>
         <BiSolidBookmarkStar onClick={() => handleBookMarked(blog)} size={25} />
       </div>
-      <button>mark as read</button>
+      <button onClick={() => handleMarkAsRead(blog.reading_time)}>
+        mark as read
+      </button>
     </div>
   );
 };
