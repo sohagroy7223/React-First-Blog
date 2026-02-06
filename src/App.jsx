@@ -12,7 +12,10 @@ function App() {
           <div className="left-side w-70% mx-auto">
             <Blogs></Blogs>
           </div>
-          <div className="right-side w-96 bg-gray-400  ">Right side</div>
+          <div className="right-side w-96 bg-gray-400  ">
+            <h2 className="text-2xl font-medium p-2">reading time: 0</h2>
+            <h2 className="text-2xl font-medium p-2">bookmarked count: 0</h2>
+          </div>
         </div>
       </Suspense>
     </>
