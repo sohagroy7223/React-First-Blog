@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "cover_Photo": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe",
+    "title": "Mastering JavaScript for Modern Web Development",
+    "author_img": "https://randomuser.me/api/portraits/men/32.jpg",
+    "author": "Sohag Roy",
+    "post_date": "2025-01-12",
+    "reading_time": "6 min read",
+    "hashTags": ["#JavaScript", "#WebDev", "#Frontend"]
+  },
+  {
+    "id": 2,
+    "cover_Photo": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "title": "React Hooks Explained for Beginners",
+    "author_img": "https://randomuser.me/api/portraits/men/45.jpg",
+    "author": "Rahim Uddin",
+    "post_date": "2025-01-18",
+    "reading_time": "5 min read",
+    "hashTags": ["#React", "#Hooks", "#Beginner"]
+  },
+  {
+    "id": 3,
+    "cover_Photo": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "title": "How to Build Responsive UI Using Tailwind CSS",
+    "author_img": "https://randomuser.me/api/portraits/women/65.jpg",
+    "author": "Nusrat Jahan",
+    "post_date": "2025-01-22",
+    "reading_time": "7 min read",
+    "hashTags": ["#TailwindCSS", "#UI", "#CSS"]
+  },
+  {
+    "id": 4,
+    "cover_Photo": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
+    "title": "Understanding REST API in Simple Words",
+    "author_img": "https://randomuser.me/api/portraits/men/22.jpg",
+    "author": "Karim Hasan",
+    "post_date": "2025-01-28",
+    "reading_time": "4 min read",
+    "hashTags": ["#API", "#REST", "#Backend"]
+  }
+]
