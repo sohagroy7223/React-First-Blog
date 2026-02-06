@@ -15,9 +15,9 @@ const Blogs = () => {
   return (
     <div>
       <h2 className="font-bold text-2xl">All blogs item: {blogs.length}</h2>
-      <div>
+      <div className="grid grid-cols-2">
         {blogs.map((blog) => (
-          <Blog blog={blog}></Blog>
+          <Blog key={blog.id} blog={blog}></Blog>
         ))}
       </div>
     </div>

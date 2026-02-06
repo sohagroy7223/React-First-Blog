@@ -9,7 +9,7 @@ function App() {
         <Navbar></Navbar>
 
         <div className="main-container flex justify-between text-center text-black font-medium gap-2 bg-gray-200 border-2 w-11/12 mx-auto">
-          <div className="left-side w-70% mx-auto">
+          <div className="left-side w-70% mx-auto ">
             <Blogs></Blogs>
           </div>
           <div className="right-side w-96 bg-gray-400  ">
