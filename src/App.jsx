@@ -12,9 +12,15 @@ function App() {
     setBookMark([...bookMark, blog]);
   };
 
-  const handleMarkAsRead = (time) => {
+  const handleMarkAsRead = (time, id) => {
     const newReadTime = readTime + time;
     setReadTime(newReadTime);
+    handelRemoveBookMark(id);
+  };
+
+  const handelRemoveBookMark = (id) => {
+    const remainingmark = bookMark.filter((mark) => mark.id !== id);
+    setBookMark(remainingmark);
   };
 
   return (
@@ -39,7 +45,10 @@ function App() {
             </h2>
             <div className="border-2 border-yellow-800 p-2 rounded-xl">
               {bookMark.map((mark) => (
-                <p className="border-2 m-1 border-blue-700 rounded-2xl">
+                <p
+                  key={mark.id}
+                  className="border-2 m-1 border-blue-700 rounded-2xl"
+                >
                   {mark.title}
                 </p>
               ))}
